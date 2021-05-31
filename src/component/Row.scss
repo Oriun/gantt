@@ -11,13 +11,13 @@
     // > * {
     //     cursor: default;
     // }
-    cursor:pointer;
+    cursor: pointer;
     svg {
         width: 20px;
         height: 20px;
         fill: #333;
         cursor: pointer;
-        transition-duration: .2s;
+        transition-duration: 0.2s;
     }
     > div:first-child {
         width: 100%;
@@ -28,14 +28,21 @@
     &:not(:hover) {
         svg {
             opacity: 0;
-            transition-duration: .2s;
+            transition-duration: 0.2s;
         }
     }
-    .date{
+    .date {
         display: flex;
         flex-wrap: nowrap;
         justify-content: flex-start;
         white-space: nowrap;
+    }
+    .name {
+        height: 100%;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     // }
 }
