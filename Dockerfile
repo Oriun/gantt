@@ -4,7 +4,7 @@ WORKDIR /node
 
 COPY ./ /node
 
-RUN npm install -g -y npm serve yarn
+RUN yarn add serve
 RUN yarn
 RUN yarn build
 
