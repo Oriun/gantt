@@ -4,18 +4,9 @@ WORKDIR /node
 
 COPY ./ /node
 
-RUN npm install -g -y npm serve
-RUN npm install -y --legacy-peer-deps
-RUN npm run build
-
-
-FROM node:latest
-
-WORKDIR /build
-
-COPY --from=BUILD /node/build /build
-
-RUN npm install -g -y serve
+RUN npm install -g -y npm serve yarn
+RUN yarn
+RUN yarn build
 
 EXPOSE 5000
 
