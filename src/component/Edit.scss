@@ -1,0 +1,26 @@
+.edit-container {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    > *:last-child {
+        margin-bottom: 48px !important;
+    }
+    .edit-title {
+        margin-bottom: 16px;
+    }
+    .no-task-button {
+        outline: none;
+        border: none;
+        background-color: #e7e7e7;
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        margin-top:16px;
+        &:hover {
+            background-color: #aaaaaa;
+            color: white;
+        }
+    }
+}

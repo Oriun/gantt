@@ -1,0 +1,68 @@
+.view-title {
+    display: flex;
+    align-items: baseline;
+    &,
+    input {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    input{
+        padding: 8px;
+        border-radius: 8px;
+        border: 2px solid #aaa;
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+    svg, button{
+        margin-left: 8px;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+.gantt {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    overflow: auto;
+    background-color: white;
+    .task-title {
+        padding-right: 12px;
+        height: 32px;
+        box-sizing: border-box;
+        border-right: 1px solid grey;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: max-content;
+        min-width: 100%;
+    }
+    .task-duration {
+        border-radius: 16px;
+        height: 20px;
+        padding-left: 8px;
+        box-sizing: border-box;
+    }
+    .gantt-background {
+        // background-color: blue;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid grey;
+        box-sizing: border-box;
+    }
+    .gantt-period {
+        text-align: center;
+
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        &.up {
+            border-bottom: 1px solid grey;
+        }
+        &.down {
+            border-top: 1px solid grey;
+        }
+    }
+}
