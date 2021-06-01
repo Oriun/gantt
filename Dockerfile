@@ -4,7 +4,7 @@ WORKDIR /node
 
 COPY ./ /node
 
-RUN yarn add serve
+RUN yarn add global serve
 RUN yarn
 RUN yarn build
 
